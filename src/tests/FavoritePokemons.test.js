@@ -4,7 +4,7 @@ import { screen } from '@testing-library/react';
 import FavoritePokemons from '../pages/FavoritePokemons';
 import renderWithRouter from '../renderWithRouter';
 
-describe('Testes no componente App.js', () => {
+describe('Testes no componente FavoritePokemons.js', () => {
   test('Teste para mostra uma menssagem de erro caso um array vazio for passado', () => {
     const arr = [];
     renderWithRouter(<FavoritePokemons pokemons={ arr } />);

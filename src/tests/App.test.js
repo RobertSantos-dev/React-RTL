@@ -7,6 +7,7 @@ import renderWithRouter from '../renderWithRouter';
 describe('Testes no componente App.js', () => {
   test('Teste para encontrar o link escrito Home', () => {
     renderWithRouter(<App />);
+
     const linkHome = screen.getByRole('link', { name: /home/i });
     const linkAbout = screen.getByRole('link', { name: /about/i });
     const linkFavoritePokemons = screen.getByRole('link', { name: /Favorite/i });
